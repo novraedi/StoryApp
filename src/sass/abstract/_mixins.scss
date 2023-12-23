@@ -1,0 +1,11 @@
+@mixin centering-using-flex($flex-dir: row) {
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin cover-center-image {
+    object-fit: cover;
+    object-position: center;
+}

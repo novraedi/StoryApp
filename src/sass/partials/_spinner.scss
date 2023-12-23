@@ -1,0 +1,17 @@
+@use '../abstract/mixins' as mix;
+
+.spinner-wrapper {
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    z-index: 9999999999;
+    @include mix.centering-using-flex
+}
+
+.spinner-border {
+    width: 70px;
+    height: 70px;
+}

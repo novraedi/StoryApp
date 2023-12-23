@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%= htmlWebpackPlugin.options.title %> | Money Tracker App</title>
+  </head>
+  <body>
+    <div class="spinner-wrapper">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <header class="pb-6">
+      <nav-app class="" brandName="<%= brandName %>"></nav-app>
+    </header>
+
+    <main id="home">
+        <div class="main-content">
+          <div class="container py-5">
+            <add-book-form></add-book-form>
+          </div>
+        </div>
+    </main>
+
+    <to-top-button></to-top-button>
+    <footer>
+      <div class="main-footer bg-dark">
+        <div class="container px-3 py-4">
+          <footer-app></footer-app>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
