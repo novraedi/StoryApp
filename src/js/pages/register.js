@@ -112,9 +112,10 @@ const Register = {
   },
 
   _showValidationFeedback(inputId, message) {
-    const inputElement = document.querySelector(`#${inputId}`);
-    inputElement.classList.add('is-invalid');
-    inputElement.parentElement.invalidFeedbackMessage = message;
+    const inputElementContainer = document.querySelector(`#${inputId}Container`);
+    const inputElementChild = document.querySelector(`#${inputId}`);
+    inputElementChild.classList.add('is-invalid');
+    inputElementContainer.invalidFeedbackMessage = message;
   },
 
   _clearValidationFeedback() {

@@ -50,7 +50,8 @@ class InputGroupWithValidation extends LitWithoutShadowDom {
                 >
                 <button 
                 class="input-group-text d-flex gap-2"
-                @click=${() => {
+                @click=${(e) => {
+    e.preventDefault();
     this.toggleSwitch = !this.toggleSwitch;
     this.type = this.toggleSwitch ? 'password' : 'text';
   }}
